@@ -38,6 +38,7 @@ if uploaded_file is not None:
     verbose=False
   )
   summary = chain.invoke(chunks)
+  print(summary)
 
   st.write("Summary:")
   st.write(output)
