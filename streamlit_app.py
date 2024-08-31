@@ -37,7 +37,7 @@ if uploaded_file is not None:
     chain_type='map_reduce',
     verbose=False
   )
-  summary = chain.run(chunks)
+  summary = chain.invoke(chunks)
 
   st.write("Summary:")
   st.write(output)
